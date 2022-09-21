@@ -21,7 +21,7 @@ const Books = () => {
     useEffect(() => {
         const fetchAllBooks = async () => {
             try{
-                const res = await axios.get('http://localhost:8800/books')
+                const res = await axios.get('https://react-node-express-mysql-app.herokuapp.com/books')
                 setBooks(res.data)
             }catch(err) {
                 console.log(err)

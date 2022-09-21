@@ -5,7 +5,7 @@ import './Book.scss'
 const Book = ({ book }) => {
   const handleDelete = async (id) => {
     try {
-      await axios.delete(`http://localhost:8800/books/${id}`)
+      await axios.delete(`https://react-node-express-mysql-app.herokuapp.com/books/${id}`)
       window.location.reload()
     } catch (err) {
       console.log(err)

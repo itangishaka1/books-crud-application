@@ -25,7 +25,7 @@ const UpdateBook = () => {
     console.log('I am sending: ', book)
     event.preventDefault()
     try {
-      await axios.put(`http://localhost:8800/books/${bookId}`, book)
+      await axios.put(`https://react-node-express-mysql-app.herokuapp.com/books/${bookId}`, book)
       navigate('/')
     } catch (error) {
       console.log(error.response)

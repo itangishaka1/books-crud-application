@@ -22,7 +22,7 @@ const AddBook = () => {
     console.log('I am sending: ', book)
     event.preventDefault()
     try {
-      await axios.post('http://localhost:8800/books', book)
+      await axios.post('https://react-node-express-mysql-app.herokuapp.com/books', book)
       navigate('/')
     } catch (error) {
       console.log(error.response)

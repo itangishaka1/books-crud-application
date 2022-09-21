@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom'
 
 import './App.scss';
 import AddBook from './pages/AddBook';
@@ -13,6 +13,10 @@ function App() {
           <Route path='/' exact element={ <Books />} />
           <Route path='/add'  element={ <AddBook />} />
           <Route path='/update/:id' exact element={ <UpdateBook />} />
+          <Route
+        path="*"
+        element={<Navigate to="/" replace />}
+    />
         </Routes>
       </Router>
     </div>

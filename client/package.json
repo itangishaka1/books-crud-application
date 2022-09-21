@@ -1,5 +1,6 @@
 {
   "name": "client",
+  "homepage": "books-crud-application.itangishaka.com",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
